@@ -1,0 +1,137 @@
+body {
+    background-image: linear-gradient(to top left, #191A1D, #36383F);
+    background-attachment: fixed;
+    font-family: 'Teko', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Teko', sans-serif;
+}
+
+.nav-wrapper {
+    height: 75px;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    margin: -10px -20px -10px -10px;
+}
+
+.nav-wrapper>.logo-wrapper {
+    margin-left: 35px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-wrapper>.logo-wrapper img {
+    width: 180px;
+    height: 100%;
+}
+
+.nav-wrapper>.explore-links-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1px;
+    font-size: 1.4em;
+}
+
+.nav-wrapper>.explore-links-wrapper>.explore {
+    font-family: 'Teko', sans-serif;
+    color: #F4E187;
+    letter-spacing: 2px;
+}
+
+.nav-wrapper>.explore-links-wrapper>.nav-links-wrapper {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-wrapper>.explore-links-wrapper>.nav-links-wrapper>.nav-link a {
+    font-family: 'Teko', sans-serif;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.nav-wrapper>.explore-links-wrapper>.nav-links-wrapper>.spark-dropdown {
+    color: #ACACAC;
+    margin-left: 15px;
+}
+
+.nav-wrapper>.explore-links-wrapper>.nav-links-wrapper>.spark-dropdown i {
+    margin-left: 5px;
+}
+
+.spark-dropdown>.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #36383F;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    font-size: 1.1em;
+    border-radius: 2px;
+}
+
+.spark-dropdown>.dropdown-content div {
+    padding: 5px;
+}
+
+.spark-dropdown>.dropdown-content div:hover {
+    color: #FFFFFF;
+    background-color: #000000;
+    transition: 0.5s;
+}
+
+.spark-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.spark-dropdown:hover .dropdown-content :nth-child(1):hover {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.spark-dropdown:hover .dropdown-content :nth-child(2):hover {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.nav-wrapper>.login-wrapper {
+    position: absolute;
+    right: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-wrapper>.login-wrapper>.button-gray {
+    background-color: #36383F;
+    color: #FFFFFF;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.4em;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 5px;
+    border-radius: 4px;
+}
+
+.nav-wrapper>.login-wrapper>.button-gray i {
+    color: #4BCE79;
+    margin-left: 5px;
+}
+
+.nav-wrapper>.login-wrapper>.button-search {
+    background-color: #000000;
+    color: #7B7E8B;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.4em;
+}
